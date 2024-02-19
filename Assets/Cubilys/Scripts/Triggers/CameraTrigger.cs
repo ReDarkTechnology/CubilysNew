@@ -13,6 +13,7 @@ namespace Cubilys.Triggers
         public CameraValues tweenValues = new CameraValues();
         public bool changeTargetObject;
         public Transform targetObject;
+        
         [Header("Tweening")]
         public TweenType tweenType = TweenType.OutCubic;
         public float tweenTime = 1f;

@@ -8,15 +8,10 @@ namespace Cubilys
     {
         // Singleton
         public static CysSerializer Instance { get; private set; }
-        public static CysSerializerSettings Settings {
-            get
-            {
-                return Instance == null ? new CysSerializerSettings() : Instance.serializerSettings;
-            }
-        }
+        public static CysSerializerSettings Settings => Instance == null ? new CysSerializerSettings() : Instance.serializerSettings;
         public CysSerializerSettings serializerSettings;
 
-        void Start()
+        private void Start()
         {
             Instance = this;
         }
