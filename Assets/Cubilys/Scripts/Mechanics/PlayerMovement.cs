@@ -239,6 +239,7 @@ namespace Cubilys
 		public void StartLine()
 		{
 			isStarted = true;
+            Debug.Log("Source playing!");
 			source.Play ();
 			CreateTail (!avoidOverlapping);
 		}
